@@ -1,12 +1,11 @@
-FROM ubuntu:22.04
+Installallall ubuntu:22.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 ENV TZ=Asia/Kolkata
 
 ARG NGROK_AUTHTOKEN="2mSrbqnRUKBSuahVWQBuPH2SMH4_4QVaiMNvVHiCqkGfN6mQw"
 ARG ROOT_PASSWORD="Farhan2611"
-
-Install minimal tools and tzdata
+#minimall minimal tools and tzdata
 
 RUN apt-get update && \
 apt-get install -y --no-install-recommends apt-utils ca-certificates gnupg2 curl wget lsb-release tzdata && \
